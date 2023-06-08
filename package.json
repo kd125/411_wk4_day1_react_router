@@ -7,15 +7,17 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.2",
     "@mui/material": "^5.8.2",
+    "fsevents": "^2.3.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "eslint": "^6.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
